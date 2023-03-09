@@ -1,3 +1,5 @@
+"""测试网站的域名已被回收，无法测试
+"""
 import unittest
 
 from requestium import Keys, Session
@@ -37,13 +39,6 @@ class ChromeTestCase(unittest.TestCase):
 
     def tearDown(self):
         self.s.driver.close()
-
-
-class PhantomjsTestCase(ChromeTestCase):
-    def setUp(self):
-        self.s = Session('phantomjs',
-                         browser='phantomjs',
-                         default_timeout=15)
 
 
 if __name__ == '__main__':

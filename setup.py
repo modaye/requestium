@@ -21,8 +21,8 @@ setup(
     packages=('requestium',),
     install_requires=(
         'requests>=2.18.1',
-        'selenium>=3.7.0,<4.0.0',
-        'parsel>=1.2.0',
+        'selenium>=4.6.0,<5.0.0',
+        'parsel>=1.7.0',
         'tldextract>=2.1.0'
     ),
     license='MIT',
